@@ -6,3 +6,6 @@ The design chosen for this project is located here:
 https://www.figma.com/file/2RU9bTBkRkee97DHngfBrG/Library?node-id=3%3A3
 
 Site is live at https://tainojax.github.io/RSAProject1Library/
+
+Index of pages can be found here:
+https://tainojax.github.io/RSAProject1Library/pages.html

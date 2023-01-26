@@ -1449,7 +1449,6 @@ input[enabled] {
 
 .review_bullet {
   margin-left: 10px;
-  font-size: ;
 }
 
 .book_description_details_back {
@@ -1469,4 +1468,35 @@ input[enabled] {
 .book_description_details_back a:visited {
   text-decoration: none;
   color: #000000;
+}
+
+.pages_created_container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.pages_created_container a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  text-decoration: capitalize;
+  color: #457b9d;
+  text-decoration: none;
+
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 2px 2px 5px #457b9d;
+  border-radius: 25px;
+
+  width: 200px;
+  height: 100px;
 }
