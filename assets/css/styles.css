@@ -74,15 +74,16 @@ container {
 }
 
 .search-container i {
-  position: absolute;
-  left: 5px;
-  top: 5px;
+  position: relative;
+  left: 30px;
+  top: 2px;
   font-size: 20px;
   color: gray;
 }
 .search-container input {
   width: 152px;
   height: 28px;
+  padding: 2px;
   padding-left: 30px;
   font-weight: 300;
   font-size: 20px;
@@ -517,6 +518,8 @@ container {
 }
 
 .staff_left_section img {
+  display: flex;
+  position: relative;
   width: 345px;
   height: 355px;
   border-top-left-radius: 25px;
@@ -585,7 +588,7 @@ container {
   margin-left: 200px;
   font-size: 52px;
   color: #457b9d;
-  transform: matrix(-1, 0, 0, 1, 0, 0);
+
   text-decoration: none;
 }
 
@@ -594,7 +597,6 @@ container {
   margin-left: 980px;
   font-size: 52px;
   color: #457b9d;
-  transform: matrix(-1, 0, 0, 1, 0, 0);
   text-decoration: none;
 }
 
@@ -756,8 +758,9 @@ container {
 
 .booklisting_search_keywords_overlay {
   position: relative;
+  text-align: right;
   margin-left: 230px;
-  left: 900px;
+  padding-right: 160px;
   top: -36px;
   align-items: left;
   justify-content: left;
@@ -765,25 +768,38 @@ container {
 }
 
 .booklisting_search_keywords_overlay i {
-  color: grey;
+  color: #457b9d;
   font-size: 24px;
   padding-right: 8px;
 }
+/*
 .booklisting_search_keywords_overlay i:hover {
-  color: #457b9d;
-  font-size: 28px;
+  font-size: 32px;
   padding-right: 8px;
 }
+*/
+
 .booklisting_search_keywords_overlay a {
   text-decoration: none;
+  color: #457b9d;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+}
+/*
+.booklisting_search_keywords_overlay a:visited {
+  text-decoration: none;
+  color: #457b9d;
 }
 .booklisting_search_keywords_overlay a:hover {
   text-decoration: none;
-  color: black;
+  color: #457b9d;
   font-size: 20px;
   font-weight: 800;
 }
-
+*/
 .booklisting_search_keywords {
   font-family: "Montserrat";
   font-style: normal;
@@ -1257,4 +1273,200 @@ input[enabled] {
   padding-left: 32px;
   padding-right: 32px;
   font-size: 24px;
+}
+
+.book_description_container_grid {
+  display: grid;
+  grid-template-columns: 350px 1042px;
+  grid-template-rows: 1fr;
+  margin-top: 62px;
+}
+
+.book_description_menu_options {
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+  padding-top: 85px;
+  height: 1132px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 62px;
+  border-left: none;
+  border-bottom: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.35);
+  border-right: 1px solid rgba(0, 0, 0, 0.35);
+}
+
+.book_description_menu_options a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.book_description_menu_options i {
+  color: #457b9d;
+  font-size: 32px;
+}
+
+.book_description_details_container {
+  align-items: center;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin-left: 16px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+}
+
+.book_description_details_header {
+  margin-top: 56px;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 52px;
+  width: 764px;
+  padding-bottom: 60px;
+}
+
+.book_description_details_rows {
+  display: flex;
+  flex-direction: row;
+  width: 1000px;
+  font-family: "Montserrat";
+  font-style: normal;
+  line-height: 29px;
+  color: #000000;
+}
+
+.book_description_details_rows h1 {
+  font-weight: 500;
+  font-size: 24px;
+  width: 151px;
+  padding-left: 126px;
+}
+
+.book_description_details_rows h2 {
+  font-weight: 300;
+  font-size: 24px;
+  width: 371px;
+  padding-left: 38px;
+}
+
+.book_description_details_book_image img {
+  position: absolute;
+  display: flex;
+  top: 240px;
+  left: 740px;
+  width: 181px;
+  height: 213px;
+}
+
+.book_description_details_container hr {
+  width: 612px;
+  height: 0px;
+  border: 1px solid rgba(0, 0, 0, 0.35);
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.reviewer_container {
+  display: flex;
+  margin-left: 255px;
+  border: #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  width: 628px;
+  height: 254px;
+}
+
+.reviewer_left_section img {
+  width: 218px;
+  height: 253px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.reviewer_container img {
+  position: relative;
+  display: flex;
+  top: 0px;
+  left: 0px;
+
+  width: 218px;
+  height: 253px;
+
+  background: url(.png);
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 15px 0px 0px 15px;
+}
+
+.reviewer_name {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 39px;
+  color: #000000;
+  margin-top: 30px;
+}
+
+.reviewer_review {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+.reviewer_stars {
+  text-align: center;
+  margin-top: 10px;
+  letter-spacing: 10px;
+  /* text-shadow: 2px 2px 5px #333; */
+  color: #ffac33;
+}
+
+.review_previous {
+  position: relative;
+  margin-left: 200px;
+  font-size: 52px;
+  color: #457b9d;
+  top: -150px;
+  text-decoration: none;
+}
+
+.review_next {
+  position: relative;
+  margin-left: 670px;
+  font-size: 52px;
+  color: #457b9d;
+  top: -150px;
+  text-decoration: none;
+}
+
+.review_bullet {
+  margin-left: 10px;
+  font-size: ;
+}
+
+.book_description_details_back {
+  display: flex;
+  position: relative;
+  justify-content: right;
+  margin-right: 120px;
+  margin-top: -40px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+.book_description_details_back a,
+.book_description_details_back a:visited {
+  text-decoration: none;
+  color: #000000;
 }
