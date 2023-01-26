@@ -1470,6 +1470,16 @@ input[enabled] {
   color: #000000;
 }
 
+.review_checkout_button_container {
+  padding-top: 15px;
+  padding-left: 20px;
+  display: flex;
+  position: relative;
+  justify-content: right;
+  margin-right: 80px;
+  margin-top: -80px;
+}
+
 .pages_created_container {
   display: flex;
   flex-wrap: wrap;
