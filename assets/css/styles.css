@@ -1,9 +1,10 @@
 body {
   margin: 0px 0px 0px 0px;
-  width: 1440px;
 }
-container {
+.container {
+  width: 1440px;
   overflow: hidden;
+  margin: 0 auto;
 }
 .navbar {
   display: flex;
@@ -16,11 +17,11 @@ container {
 }
 
 .navbar_logo img {
-  position: absolute;
+  position: relative;
   width: 128px;
   height: 58px;
   left: 35px;
-  top: 5px;
+  top: 1px;
 }
 
 .navbar_menu {
